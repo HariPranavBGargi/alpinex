@@ -1,0 +1,10 @@
+FROM alpine
+
+# X server tools and drivers
+RUN apk	add xorg-server xf86-input-libinput dbus eudev mesa xf86-video-intel xf86-video-fbdev xf86-video-vesa xhost
+
+# GUI apps 
+RUN apk add i3wm i3status terminator terminus-font vim firefox
+
+CMD startx /usr/bin/firefox
+
