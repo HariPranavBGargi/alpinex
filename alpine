@@ -6,5 +6,4 @@ RUN apk	add xorg-server xf86-input-libinput dbus eudev mesa xf86-video-intel xf8
 # GUI apps 
 RUN apk add i3wm i3status terminator terminus-font vim firefox
 
-CMD startx /usr/bin/firefox
-
+CMD startx /usr/bin/i3
