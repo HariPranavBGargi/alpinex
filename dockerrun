@@ -1,0 +1,2 @@
+#!/bin/bash
+docker run --privileged -v /run/udev/data:/run/udev/data alpinex startx /usr/bin/$1
